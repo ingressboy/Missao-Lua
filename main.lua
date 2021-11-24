@@ -11,4 +11,22 @@ client:on('messageCreate', function(message)
 	end
 end)
 
+client:on('messageCreate', function(message)
+	if message.content == '=help' then
+		message.channel:send('Hilfe :')
+	end
+end)
+
+client:on('messageCreate', function(message)
+	if message.content == '=version' then
+		message.channel:send('v0.2')
+	end
+end)
+
+client:on('messageCreate', function(message)
+	if message.content == '=twitter' then
+		message.channel:send('https://twitter.com/ingressboy')
+	end
+end)
+
 client:run('Bot INSERT_TOKEN_HERE')
