@@ -1,5 +1,8 @@
 local discordia = require('discordia')
-local client = discordia.Client()
+local client = discordia.Client{
+	logFile = 'mybot.log',
+	cacheAllMembers = true,
+}
 
 client:on('ready', function()
 	print('Logged in as '.. client.user.username)
