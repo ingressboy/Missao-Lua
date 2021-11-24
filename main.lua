@@ -6,7 +6,7 @@ client:on('ready', function()
 end)
 
 client:on('messageCreate', function(message)
-	if message.content == '!ping' then
+	if message.content == '=ping' then
 		message.channel:send('Pong!')
 	end
 end)
