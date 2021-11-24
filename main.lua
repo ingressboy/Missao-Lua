@@ -19,13 +19,19 @@ end)
 
 client:on('messageCreate', function(message)
 	if message.content == '=version' then
-		message.channel:send('v0.2')
+		message.channel:send('v0.3')
 	end
 end)
 
 client:on('messageCreate', function(message)
 	if message.content == '=twitter' then
 		message.channel:send('https://twitter.com/ingressboy')
+	end
+end)
+
+client:on('messageCreate', function(message)
+	if message.content == '=github' then
+		message.channel:send('https://github.com/ingressboy/Missao-Lua')
 	end
 end)
 
