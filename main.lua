@@ -50,4 +50,4 @@ client:on('messageCreate', function(message)
     end
 end)
 
-client:run('Bot OTA5NDM1OTU2MDAyNjk3MzA5.YZEQPA.973HCEOZ5hgnL8Jd6kuLbGbx0pc')
+client:run('Bot Token')
